@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Mini CRM Platform 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive Customer Relationship Management system built with **React.js**, **Node.js**, and **MySQL**. This platform enables customer segmentation, personalized campaign delivery, and AI-powered insights.
 
-## Available Scripts
+![CRM Dashboard](https://img.shields.io/badge/Status-Fully%20Functional-brightgreen)
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Node.js](https://img.shields.io/badge/Node.js-22.9.0-green)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### 🎯 Core Functionality
+- **Customer Segmentation** - Dynamic rule builder with AND/OR logic
+- **Campaign Management** - Automated campaign creation and tracking
+- **Real-time Analytics** - Live audience preview and performance metrics
+- **AI-Powered Insights** - Automated campaign analysis and recommendations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔐 Authentication
+- **Google OAuth 2.0** - Secure enterprise-grade authentication
+- **Developer Mode** - Quick login for testing and development
+- **Session Management** - Persistent user sessions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📊 Analytics & Reporting
+- Audience size prediction
+- Campaign success/failure rates
+- Delivery statistics
+- AI-generated performance insights
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React.js 18** - Modern UI framework
+- **React Router** - Navigation and routing
+- **Context API** - State management
+- **Google OAuth** - Authentication
+- **Axios** - API communication
+- **CSS3** - Responsive styling
 
-### `npm run build`
+### Backend
+- **Node.js** - Runtime environment
+- **Express.js** - Web framework
+- **MySQL 8** - Relational database
+- **JWT** - Authentication tokens
+- **Google Auth Library** - OAuth integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Database
+- **MySQL** with 5 main tables:
+  - `users` - Authentication and user data
+  - `customers` - Customer information and activity
+  - `segments` - Segmentation rules
+  - `campaigns` - Campaign data and metrics
+  - `communication_logs` - Message delivery records
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Quick Start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v16 or higher)
+- MySQL (v8 or higher)
+- Google OAuth credentials
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/prafullfarswal/mini-crm-platform.git
+   cd mini-crm-platform
+2. **Backend Setup**
+   ```bash
+   cd backend
+   npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   # Setup environment variables
+   cp .env.example .env
+   # Edit .env with your database credentials
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   # Initialize database
+   mysql -u root -p < ../database/schema.sql
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   # Start backend server
+   npm run dev
+3. **Frontend Setup**
+   ```bash
+   cd frontend
+   npm install
+   npm start
+4. **Access Application**
+   Frontend: http://localhost:3000
+   Backend API: http://localhost:5000
