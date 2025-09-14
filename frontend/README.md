@@ -1,32 +1,27 @@
-# Mini CRM Platform 🚀
+# Mini CRM Platform 
 
-A comprehensive Customer Relationship Management system built with **React.js**, **Node.js**, and **MySQL**. This platform enables customer segmentation, personalized campaign delivery, and AI-powered insights.
+A comprehensive Customer Relationship Management system built with **React.js**, **Node.js**, and **MySQL**. This platform enables customer segmentation, personalized campaign delivery.
 
-![CRM Dashboard](https://img.shields.io/badge/Status-Fully%20Functional-brightgreen)
-![React](https://img.shields.io/badge/React-18.2.0-blue)
-![Node.js](https://img.shields.io/badge/Node.js-22.9.0-green)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
+## Features
 
-## ✨ Features
-
-### 🎯 Core Functionality
+### Core Functionality
 - **Customer Segmentation** - Dynamic rule builder with AND/OR logic
 - **Campaign Management** - Automated campaign creation and tracking
 - **Real-time Analytics** - Live audience preview and performance metrics
 - **AI-Powered Insights** - Automated campaign analysis and recommendations
 
-### 🔐 Authentication
+### Authentication
 - **Google OAuth 2.0** - Secure enterprise-grade authentication
 - **Developer Mode** - Quick login for testing and development
 - **Session Management** - Persistent user sessions
 
-### 📊 Analytics & Reporting
+### Analytics & Reporting
 - Audience size prediction
 - Campaign success/failure rates
 - Delivery statistics
 - AI-generated performance insights
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js 18** - Modern UI framework
@@ -51,7 +46,7 @@ A comprehensive Customer Relationship Management system built with **React.js**,
   - `campaigns` - Campaign data and metrics
   - `communication_logs` - Message delivery records
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v16 or higher)
